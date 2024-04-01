@@ -1,0 +1,23 @@
+Greedy Approach :
+On each iteration we pick one item which have 
+heightest cost and then check we can include 
+it or not , if yes then we include it . 
+
+This algorithm may not give optimal solution .
+Let see one case .
+  ======================= 
+   value :  20, 12,10,5
+   weight : 15, 5 ,5, 2
+   wt-limit : 16
+  =======================
+if we go by above algorithm 
+then we first take 20 and our wt-limit reduce to (16-15).
+Now we can able to pick any items
+So, the total cost is 20 
+
+But 
+if we choose items with value 12 ,10, 5
+then total cost is 27 and the total weight is 12(5+5+2) which is less than 
+weight limit 16.So greedy algorithm will not give optimal solution always.
+
+   

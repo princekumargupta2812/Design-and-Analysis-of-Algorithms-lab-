@@ -1,0 +1,17 @@
+Greedy Approach :
+The approach is simple choose the job which can give maximum 
+profit and check for it scheduling . We deciding scheduling of
+that particular job on the basis of "How late this job is done" 
+mean we choose slot which are just less than or equal to deadline 
+of that slot (slot must be avialable). If we are able to find slot 
+then we choose that job then we mark slot unavailable otherwise we 
+ignore that job.
+
+we take the input and then store it in vector in form of
+pair like {profit,deadline} then we sort the vector and start 
+checking for job from back of vector (becuase in the back job is of max profit)
+. We store all the slots in a set and for checking slot for a 
+particular job we apply binary search on that set. If we are able
+to find slot the we chhose that job and erasing slot from set.
+
+This Approach always give optimal solution
