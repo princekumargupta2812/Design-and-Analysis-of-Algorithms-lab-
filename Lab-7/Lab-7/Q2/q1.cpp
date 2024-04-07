@@ -21,7 +21,7 @@ int maxProfit(int n,int D[],int P[]){
             s.erase(it);
         }
     }
-    return ans;
+    return ans;  
 }
 
 
